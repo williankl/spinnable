@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat
+<RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:orientation="vertical"
         android:layout_width="match_parent"
@@ -7,7 +7,8 @@
 
     <williankl.spinnable.core.SpinnableView
             android:id="@+id/spinnableXml"
+            android:layout_centerInParent="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+</RelativeLayout>

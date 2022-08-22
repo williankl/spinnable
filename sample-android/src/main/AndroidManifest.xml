@@ -3,7 +3,8 @@
           package="williankl.spinnable.sampleAndroid">
     <application
             android:label="Sample"
-            android:usesCleartextTraffic="true">
+            android:usesCleartextTraffic="true"
+            android:theme="@style/Theme.AppCompat">
         <activity
                 android:name=".SampleActivity"
                 android:exported="true">

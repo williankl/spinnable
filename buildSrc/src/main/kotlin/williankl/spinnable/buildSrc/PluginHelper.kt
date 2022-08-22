@@ -39,7 +39,7 @@ internal object PluginHelper {
     }
 
     fun BaseExtension.setupAndroid(){
-        compileSdkVersion(31)
+        compileSdkVersion(32)
 
         viewBinding {
             isEnabled = true
@@ -60,7 +60,7 @@ internal object PluginHelper {
         }
 
         composeOptions {
-            kotlinCompilerExtensionVersion = "1.3.0-rc02"
+            kotlinCompilerExtensionVersion = "1.2.0"
         }
     }
 
