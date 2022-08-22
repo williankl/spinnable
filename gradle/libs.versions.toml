@@ -20,4 +20,4 @@ plugin-multiplatform-compose = { module = "org.jetbrains.compose:compose-gradle-
 compose-android-ui = { module = "androidx.compose.ui:ui", version.ref = "android-compose" }
 compose-android-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "android-compose" }
 compose-android-composeActivity = { module = "androidx.activity:activity-compose", version.ref = "android-activity" }
-compose-android-activity = { module = "androidx.appcompat:appcompat", version.ref = "android-activity" }
+android-activity = { module = "androidx.appcompat:appcompat", version.ref = "android-activity" }

@@ -35,10 +35,10 @@ internal object PluginHelper {
 
     fun Project.setupAndroidLibConfig() {
         findAndroidExtension()
-            .setupAndroid()
+            .setupAndroid(withCompose = true)
     }
 
-    fun BaseExtension.setupAndroid(){
+    fun BaseExtension.setupAndroid(withCompose: Boolean){
         compileSdkVersion(32)
 
         viewBinding {
@@ -55,12 +55,14 @@ internal object PluginHelper {
             targetCompatibility = JavaVersion.VERSION_1_8
         }
 
-        buildFeatures.apply {
-            compose = true
-        }
+        if(withCompose){
+            buildFeatures.apply {
+                compose = true
+            }
 
-        composeOptions {
-            kotlinCompilerExtensionVersion = "1.2.0"
+            composeOptions {
+                kotlinCompilerExtensionVersion = "1.2.0"
+            }
         }
     }
 

@@ -23,7 +23,7 @@ internal object MultiplatformTargetHelper {
     private fun Project.applyAndroidTarget(){
         findAndroidExtension().apply {
             sourceSets["main"].manifest.srcFile("src/androidMain/AndroidManifest.xml")
-            setupAndroid()
+            setupAndroid(withCompose = true)
         }
 
         extensions.configure<KotlinMultiplatformExtension>() {
