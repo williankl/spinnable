@@ -14,6 +14,7 @@ internal class SamplePlugin: Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             plugins.apply("org.jetbrains.kotlin.jvm")
+            plugins.apply("org.jetbrains.compose")
             applyCommonPlugins()
             applyKotlinOptions()
             applyRepositories()

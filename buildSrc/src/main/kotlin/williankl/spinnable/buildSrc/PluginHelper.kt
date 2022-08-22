@@ -14,7 +14,6 @@ internal object PluginHelper {
 
     fun Project.applyCommonPlugins() {
         plugins.apply("org.jmailen.kotlinter")
-        plugins.apply("org.jetbrains.compose")
     }
 
     fun Project.applyKotlinOptions() {
