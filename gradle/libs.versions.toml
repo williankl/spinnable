@@ -3,6 +3,7 @@ plugin-android = "7.2.2"
 plugin-ktlint = "3.10.0"
 kotlin = "1.7.0"
 compose = "1.2.0-alpha01-dev755"
+android-compose = "1.1.0"
 
 [libraries]
 
@@ -12,3 +13,8 @@ plugin-android = { module = "com.android.tools.build:gradle", version.ref = "plu
 plugin-kotlin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
 plugin-ktlint = { module = "org.jmailen.gradle:kotlinter-gradle", version.ref = "plugin-ktlint" }
 plugin-multiplatform-compose = { module = "org.jetbrains.compose:compose-gradle-plugin", version.ref = "compose" }
+
+# Android - Compose
+
+compose-android-ui = { module = "androidx.compose.ui:ui", version.ref = "android-compose" }
+compose-android-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "android-compose" }

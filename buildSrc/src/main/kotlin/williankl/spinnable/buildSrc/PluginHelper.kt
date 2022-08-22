@@ -42,6 +42,10 @@ internal object PluginHelper {
     fun BaseExtension.setupAndroid(){
         compileSdkVersion(31)
 
+        viewBinding {
+            isEnabled = true
+        }
+
         defaultConfig{
             minSdk = 23
             targetSdk = 31
