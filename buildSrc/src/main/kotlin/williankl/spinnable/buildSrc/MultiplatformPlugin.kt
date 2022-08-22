@@ -12,6 +12,7 @@ internal class MultiplatformPlugin : Plugin<Project> {
         with(target) {
             plugins.apply("org.jetbrains.kotlin.multiplatform")
             plugins.apply("com.android.library")
+            plugins.apply("org.jetbrains.compose")
             applyCommonPlugins()
             applyKotlinOptions()
             applyRepositories()

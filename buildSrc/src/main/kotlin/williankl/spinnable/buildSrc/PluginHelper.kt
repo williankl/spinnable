@@ -14,7 +14,6 @@ internal object PluginHelper {
 
     fun Project.applyCommonPlugins() {
         plugins.apply("org.jmailen.kotlinter")
-        plugins.apply("org.jetbrains.compose")
     }
 
     fun Project.applyKotlinOptions() {
@@ -40,7 +39,11 @@ internal object PluginHelper {
     }
 
     fun BaseExtension.setupAndroid(){
-        compileSdkVersion(31)
+        compileSdkVersion(32)
+
+        viewBinding {
+            isEnabled = true
+        }
 
         defaultConfig{
             minSdk = 23
@@ -57,7 +60,7 @@ internal object PluginHelper {
         }
 
         composeOptions {
-            kotlinCompilerExtensionVersion = "1.3.0-rc02"
+            kotlinCompilerExtensionVersion = "1.2.0"
         }
     }
 

@@ -13,3 +13,4 @@ rootProject.name = "spinnable"
 
 include(":core")
 include(":sample")
+include(":sample-android")
