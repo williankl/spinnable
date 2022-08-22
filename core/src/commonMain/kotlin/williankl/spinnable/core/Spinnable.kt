@@ -24,7 +24,7 @@ private const val THREE_SIXTY_DEGREES = 360F
 private const val MILLIS_UNIT = 1000L
 @Composable
 @ExperimentalComposeUiApi
-fun SpinnableView(
+public fun SpinnableView(
     front: @Composable () -> Unit,
     back: @Composable () -> Unit,
     state: SpinnableState = SpinnableState.Manual.Both,
