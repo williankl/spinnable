@@ -7,7 +7,7 @@ kotlin {
     sourceSets {
         val commonMain by getting {
             dependencies {
-
+                implementation(compose.foundation)
             }
         }
 
