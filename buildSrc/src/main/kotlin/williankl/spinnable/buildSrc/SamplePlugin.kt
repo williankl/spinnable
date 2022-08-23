@@ -6,6 +6,7 @@ import org.gradle.kotlin.dsl.configure
 import org.jetbrains.compose.ComposeExtension
 import org.jetbrains.compose.desktop.DesktopExtension
 import org.jetbrains.compose.desktop.application.dsl.TargetFormat
+import williankl.spinnable.buildSrc.PluginHelper.fullVersion
 import williankl.spinnable.buildSrc.PluginHelper.applyCommonPlugins
 import williankl.spinnable.buildSrc.PluginHelper.applyKotlinOptions
 import williankl.spinnable.buildSrc.PluginHelper.applyRepositories
@@ -29,7 +30,7 @@ internal class SamplePlugin: Plugin<Project> {
                     nativeDistributions {
                         targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
                         packageName = "jvm"
-                        packageVersion = "1.0.0"
+                        packageVersion = fullVersion
                     }
                 }
             }

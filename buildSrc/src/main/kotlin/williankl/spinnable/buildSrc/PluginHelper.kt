@@ -12,6 +12,10 @@ import org.gradle.kotlin.dsl.findByType
 
 internal object PluginHelper {
 
+    val majorVersion = 1
+    val minorVersion = 0
+    val patchVersion = 0
+    val fullVersion = "$majorVersion.$minorVersion.$patchVersion"
     fun Project.applyCommonPlugins() {
         plugins.apply("org.jmailen.kotlinter")
     }
