@@ -6,9 +6,12 @@ import org.gradle.api.JavaVersion
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 import org.gradle.kotlin.dsl.configure
+import williankl.spinnable.buildSrc.PluginHelper.majorVersion
 import williankl.spinnable.buildSrc.PluginHelper.applyCommonPlugins
 import williankl.spinnable.buildSrc.PluginHelper.applyKotlinOptions
 import williankl.spinnable.buildSrc.PluginHelper.applyRepositories
+import williankl.spinnable.buildSrc.PluginHelper.minorVersion
+import williankl.spinnable.buildSrc.PluginHelper.patchVersion
 import williankl.spinnable.buildSrc.PluginHelper.setupAndroid
 
 internal class SampleAndroidPlugin : Plugin<Project> {
@@ -28,8 +31,8 @@ internal class SampleAndroidPlugin : Plugin<Project> {
             setupAndroid(withCompose = false)
             defaultConfig {
                 applicationId = "williankl.spinnable"
-                versionCode = 1
-                versionName = "1.0"
+                versionCode = majorVersion
+                versionName = "$minorVersion.$patchVersion"
             }
         }
     }
