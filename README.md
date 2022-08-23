@@ -1,4 +1,4 @@
-# Spinnable - Kotlin Multiplatform
+# Spinnable
 
 ### About
 Kotlin multiplatform ui library to spin components. We support `jvm` (desktop) and `Android`. Check out the wiki page for 
