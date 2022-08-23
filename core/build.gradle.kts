@@ -9,6 +9,7 @@ kotlin {
             dependencies{
                 implementation(libs.compose.android.ui)
                 implementation(libs.compose.android.foundation)
+                implementation(libs.android.activity)
             }
         }
 
