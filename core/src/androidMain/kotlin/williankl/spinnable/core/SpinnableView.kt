@@ -9,6 +9,8 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.ui.ExperimentalComposeUiApi
 import androidx.compose.ui.viewinterop.AndroidView
+import androidx.core.content.withStyledAttributes
+import williankl.spinnable.R
 import williankl.spinnable.databinding.SpinnableLayoutBinding
 
 public class SpinnableView @JvmOverloads constructor(
@@ -16,11 +18,18 @@ public class SpinnableView @JvmOverloads constructor(
     attrs: AttributeSet? = null,
     defStyleAttr: Int = 0
 ) : LinearLayout(context, attrs, defStyleAttr) {
+
     private val binding: SpinnableLayoutBinding =
         SpinnableLayoutBinding.inflate(LayoutInflater.from(context), this, true)
 
     private val state: MutableState<SpinnableState> =
         mutableStateOf(SpinnableState.Manual.Both)
+
+    init {
+        context.withStyledAttributes(attrs, R.styleable.SpinnableAttrs) {
+            state.value = buildSpinnableAttr()
+        }
+    }
 
     public fun changeViewState(newState: SpinnableState) {
         state.value = newState

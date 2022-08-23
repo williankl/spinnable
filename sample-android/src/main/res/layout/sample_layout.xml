@@ -2,7 +2,7 @@
 <RelativeLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.appcompat.widget.LinearLayoutCompat
             android:orientation="vertical"
@@ -26,7 +26,8 @@
                     android:id="@+id/spinnableNone"
                     android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    app:state="none"/>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -46,7 +47,10 @@
                     android:id="@+id/spinnableManualBoth"
                     android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    app:state="manual"
+                    app:isVerticalEnabled="true"
+                    app:isHorizontalEnabled="true"/>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -66,7 +70,10 @@
                     android:id="@+id/spinnableAutoBoth"
                     android:layout_centerInParent="true"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
+                    android:layout_height="wrap_content"
+                    app:state="automatic"
+                    app:horizontalSpeed="360"
+                    app:verticalSpeed="180"/>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
