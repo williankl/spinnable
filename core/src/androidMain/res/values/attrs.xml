@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SpinnableAttrs">
+        <attr name="state" format="enum">
+            <enum name="none" value="0"/>
+            <enum name="manual" value="1"/>
+            <enum name="automatic" value="2"/>
+        </attr>
+
+        <attr name="isHorizontalEnabled" format="boolean"/>
+        <attr name="isVerticalEnabled" format="boolean"/>
+
+        <attr name="horizontalSpeed" format="float"/>
+        <attr name="verticalSpeed" format="float"/>
+    </declare-styleable>
+</resources>

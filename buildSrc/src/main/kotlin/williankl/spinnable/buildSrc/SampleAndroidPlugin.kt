@@ -25,21 +25,11 @@ internal class SampleAndroidPlugin : Plugin<Project> {
 
     private fun Project.setupAndroidAppConfig() {
         extensions.configure<BaseAppModuleExtension> {
-            setupAndroid()
+            setupAndroid(withCompose = false)
             defaultConfig {
                 applicationId = "williankl.spinnable"
                 versionCode = 1
                 versionName = "1.0"
-            }
-
-            buildTypes {
-                release {
-                    isMinifyEnabled = false
-                    proguardFiles(
-                        getDefaultProguardFile("proguard-android-optimize.txt"),
-                        "proguard-rules.pro"
-                    )
-                }
             }
         }
     }
