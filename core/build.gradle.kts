@@ -1,9 +1,14 @@
 
 plugins {
     id("spinnable.multiplatform")
+    `maven-publish`
 }
 
 kotlin {
+    android {
+        publishAllLibraryVariants()
+    }
+
     sourceSets {
         val androidMain by getting {
             dependencies{
