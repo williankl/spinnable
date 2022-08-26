@@ -1,7 +1,7 @@
 
 plugins {
     id("spinnable.multiplatform")
-    `maven-publish`
+    id("com.vanniktech.maven.publish")
 }
 
 kotlin {
