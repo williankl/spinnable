@@ -16,6 +16,8 @@ internal object PluginHelper {
     val minorVersion = 0
     val patchVersion = 0
     val fullVersion = "$majorVersion.$minorVersion.$patchVersion"
+
+
     fun Project.applyCommonPlugins() {
         plugins.apply("org.jmailen.kotlinter")
     }
