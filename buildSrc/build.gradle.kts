@@ -3,9 +3,9 @@ plugins {
 }
 
 repositories {
-    gradlePluginPortal()
     google()
     mavenCentral()
+    gradlePluginPortal()
 }
 
 gradlePlugin {
@@ -24,6 +24,7 @@ gradlePlugin {
 }
 
 dependencies {
+    implementation(libs.plugin.vannitktechMaven)
     implementation(libs.plugin.android)
     implementation(libs.plugin.kotlin)
     implementation(libs.plugin.multiplatform.compose)
