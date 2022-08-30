@@ -12,3 +12,15 @@ Kotlin multiplatform ui library to spin components. We support `jvm` (desktop) a
 > * Improve performance, if needed
 
 https://user-images.githubusercontent.com/57682159/186269621-a521daa1-6d5e-40b2-96d1-f6e6b43b7a3c.mp4
+
+### Adding in your projects
+Add these on `build.gradle.kts` file of the target module.
+```
+repositories {
+  mavenCentral()
+}
+
+dependencies {
+  implementation("io.github.williankl.spinnable:spinnable-core:$spinnableVersion")
+}
+```
