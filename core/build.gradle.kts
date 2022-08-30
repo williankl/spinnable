@@ -5,7 +5,7 @@ plugins {
 }
 
 kotlin {
-    android { publishAllLibraryVariants() }
+    android { publishLibraryVariants() }
 
     sourceSets {
         val androidMain by getting {
