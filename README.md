@@ -10,6 +10,8 @@ Kotlin multiplatform ui library to spin components. We support `jvm` (desktop) a
 > * iOS support
 > * Api design improvements
 > * Improve performance, if needed
+> * Add the option to snap on release to closest side
+> * Add the option to set component rotation on demand
 
 https://user-images.githubusercontent.com/57682159/186269621-a521daa1-6d5e-40b2-96d1-f6e6b43b7a3c.mp4
 
