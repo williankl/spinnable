@@ -1,3 +1,8 @@
+![GitHub branch checks state](https://img.shields.io/github/checks-status/williankl/spinnable/master)
+![Maven Central](https://img.shields.io/maven-central/v/io.github.williankl.spinnable/spinnable-core)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/williankl/spinnable/Project%20CI)
+![GitHub](https://img.shields.io/github/license/williankl/spinnable)
+
 https://user-images.githubusercontent.com/57682159/186269621-a521daa1-6d5e-40b2-96d1-f6e6b43b7a3c.mp4
 
 # Spinnable
