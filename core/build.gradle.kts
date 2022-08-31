@@ -5,20 +5,19 @@ plugins {
 }
 
 kotlin {
-    android { publishLibraryVariants() }
+    android { publishAllLibraryVariants() }
 
     sourceSets {
         val androidMain by getting {
             dependencies{
-                implementation(libs.compose.android.ui)
-                implementation(libs.compose.android.foundation)
-                implementation(libs.android.activity)
+                api(libs.android.activity)
             }
         }
 
         val commonMain by getting {
             dependencies {
-                implementation(compose.foundation)
+                compileOnly(compose.foundation)
+                compileOnly(compose.ui)
             }
         }
 
